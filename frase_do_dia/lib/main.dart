@@ -69,7 +69,7 @@ class _MyAppState extends State<MyApp> {
             children: [
               Image.asset(
                 caminhoImagens[Random().nextInt(caminhoImagens.length)],
-                width: 140,
+                width: 130,
               ),
               Column(
                 children: [
