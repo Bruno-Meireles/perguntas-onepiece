@@ -77,7 +77,7 @@ class _MyAppState extends State<MyApp> {
                     _fraseGerada,
                     textAlign: TextAlign.center,
                     style: const TextStyle(
-                      color: Colors.black,
+                      color: Colors.black87,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
