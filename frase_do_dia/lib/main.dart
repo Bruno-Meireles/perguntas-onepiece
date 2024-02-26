@@ -13,8 +13,21 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  final caminhoImagens = [
+    "images/luffy.jpg",
+    "images/zoro.jpg",
+    "images/usopp.jpg",
+    "images/robin.jpg",
+    "images/brook.jpg",
+    "images/nami.jpg",
+    "images/sanji.jpg",
+    "images/chopper.jpg",
+    "images/ace.jpg",
+    "images/roger.jpg",
+  ];
+
   final _frases = [
-    "Não importa quantas vezes você cai, o importante é sempre se levantar. - Monkey D. Luffy",
+    "Não importa quantas vezes você cai, o importante é sempre se levantar. - Monkey D. Luffy, ",
     "Quando você está lutando pela coisa certa, não há necessidade de desistir. - Roronoa Zoro",
     "A coragem não é a ausência do medo, mas sim a determinação de seguir em frente apesar dele. - Usopp",
     "O verdadeiro poder vem da convicção de seguir seus sonhos, não importa o quão impossíveis eles pareçam. - Nico Robin",
@@ -55,8 +68,8 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image.asset(
-                'images/luffy.jpg',
-                width: 200,
+                caminhoImagens[Random().nextInt(caminhoImagens.length)],
+                width: 140,
               ),
               Column(
                 children: [
